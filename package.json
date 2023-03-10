@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
     "fs-extra": "^11.1.0",
+    "rollup-plugin-babel": "^4.4.0",
     "sass": "^1.58.3",
     "vite": "^4.1.0"
   }
