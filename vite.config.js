@@ -2,9 +2,17 @@
 import { defineConfig } from 'vite';
 import fs from 'fs-extra';
 import babel from 'rollup-plugin-babel';
+import stylelint from 'vite-plugin-stylelint';
 
 export default defineConfig({
   root: './src',
+  logLevel: 'info',
+  plugins: [
+    stylelint({
+      failOnError: true,
+      cache: false,
+    })
+  ],
   build: {
     outDir: '../dist',
     emptyOutDir: true,
@@ -24,6 +32,10 @@ export default defineConfig({
           exclude: ['node_modules/**'],
           presets: ['@babel/preset-env'],
         }),
+        stylelint({
+          failOnError: true,
+          cache: false,
+        })
       ],
     },
   },
