@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import fs from 'fs-extra';
 import babel from 'rollup-plugin-babel';
 import stylelint from 'vite-plugin-stylelint';
+import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
   root: './src',
@@ -11,7 +12,12 @@ export default defineConfig({
     stylelint({
       failOnError: true,
       cache: false,
-    })
+    }),
+    eslint({
+      include: ['src/**/*.js'],
+      exclude: ['node_modules/**', './*.config.js'],
+      fix: false,
+    }),
   ],
   build: {
     outDir: '../dist',
@@ -35,7 +41,12 @@ export default defineConfig({
         stylelint({
           failOnError: true,
           cache: false,
-        })
+        }),
+        eslint({
+          include: ['dist/**/*.js'],
+          exclude: ['node_modules/**', './*.config.js'],
+          fix: false,
+        }),
       ],
     },
   },
