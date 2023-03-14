@@ -104,7 +104,9 @@ section {
 	display: block;
 }
 
-body {
+body,
+button,
+input {
 	font-family: $default-font;
 }
 

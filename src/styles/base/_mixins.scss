@@ -46,3 +46,9 @@ $tablet: 768px;
 		}
 	}
 }
+
+@mixin animation {
+	.loaded & {
+		@content;
+	}
+}
