@@ -11,10 +11,3 @@
 
 @import 'shared/header';
 @import 'shared/footer';
-
-.button {
-	@include animation {
-		transition: $transition-primary transform;
-		transform: translateX(500px);
-	}
-}

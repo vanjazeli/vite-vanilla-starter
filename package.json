@@ -1,25 +1,27 @@
 {
-  "name": "spinning-rings",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/eslint-parser": "^7.19.1",
-    "@babel/preset-env": "^7.20.2",
-    "fs-extra": "^11.1.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "sass": "^1.58.3",
-    "stylelint": "^15.2.0",
-    "stylelint-config-standard": "^30.0.1",
-    "stylelint-config-standard-scss": "^7.0.1",
-    "vite": "^4.1.0",
-    "vite-plugin-eslint": "^1.8.1",
-    "vite-plugin-stylelint": "^4.3.0"
-  }
+	"name": "spinning-rings",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.21.0",
+		"@babel/eslint-parser": "^7.19.1",
+		"@babel/preset-env": "^7.20.2",
+		"autoprefixer": "^10.4.14",
+		"fs-extra": "^11.1.0",
+		"postcss": "^8.4.21",
+		"rollup-plugin-babel": "^4.4.0",
+		"sass": "^1.58.3",
+		"stylelint": "^15.2.0",
+		"stylelint-config-standard": "^30.0.1",
+		"stylelint-config-standard-scss": "^7.0.1",
+		"vite": "^4.1.0",
+		"vite-plugin-eslint": "^1.8.1",
+		"vite-plugin-stylelint": "^4.3.0"
+	}
 }
